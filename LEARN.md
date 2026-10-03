@@ -3,9 +3,10 @@
 Fiche personnelle construite pendant le projet `grc-audit-pme`. Objectif : savoir **expliquer** ce
 que j'ai fait en entretien (cabinet de conseil, banque, Big4), sans réciter.
 
-> Prudence : je cite les textes marocains de mémoire de travail ; les numéros d'articles et les
-> références de décrets doivent être revérifiés sur le Bulletin officiel / les sites de la CNDP et de
-> la DGSSI avant tout usage professionnel.
+> Prudence : les articles de la loi 09-08 et le décret 2-21-406 ont été relus sur le texte consolidé
+> (portail Adala) pendant la revue ; ils restent à faire confirmer par un juriste avant tout usage
+> professionnel. Le cas AgriSouss est **fictif** : si on me demande « qui avez-vous interviewé ? »,
+> la réponse est « personne, les entretiens sont simulés ; j'ai appliqué la démarche sur un cas construit ».
 
 ---
 
@@ -132,7 +133,7 @@ Oui, dès qu'il y a des données personnelles (clients, salariés). Conséquence
 Le **transfert de données hors du Maroc** : il faut vérifier que le pays offre un niveau de protection suffisant au sens de la CNDP, ou obtenir une autorisation/s'appuyer sur une dérogation prévue par la loi. Ensuite : contrat de sous-traitance, minimisation, sécurité des comptes (MFA).
 
 **12. Quelles sont vos 3 premières recommandations pour une PME sans sécurité ?**
-MFA partout (messagerie, hébergeur, domaine) ; sauvegardes 3-2-1 avec test de restauration ; suppression des comptes partagés/obsolètes et des droits admin. Plus une règle anti-fraude au virement. Gros effet, coût quasi nul.
+MFA partout (messagerie, hébergeur, domaine) ; sauvegardes 3-2-1 avec test de restauration ; suppression des comptes partagés/obsolètes et des droits admin. Plus une règle anti-fraude au virement. Gros effet, coût faible.
 
 **13. Comment mesurez-vous la maturité ?**
 Échelle 0-5 type CMMI (inexistant → optimisé), fondée sur entretiens, observations et preuves. Je fixe une **cible proportionnée** (2-3 pour une PME) et je mesure l'écart. Je dis clairement que ce sont des jugements d'auditeur.

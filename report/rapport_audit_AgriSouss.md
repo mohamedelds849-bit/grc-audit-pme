@@ -1,6 +1,6 @@
 ---
 title: Mini-audit de sécurité de l'information
-client: AgriSouss SARL (étude de cas anonymisée)
+client: AgriSouss SARL (étude de cas fictive)
 author: Mohamed Elansari - élève ingénieur en cybersécurité, Universiapolis Agadir
 version: 1.0
 date: octobre 2026
@@ -44,7 +44,7 @@ classification: Confidentiel - diffusion restreinte à la gérance (cas fictif, 
 
 ## 1.1 Contexte de la mission
 
-> **Étude de cas anonymisée, réalisée dans un cadre académique.** « AgriSouss SARL » est un nom fictif. Les constats sont plausibles pour une PME de ce profil mais ne décrivent aucune entreprise réelle ; aucune donnée réelle (nom, domaine, adresse IP, identifiant) n'est reproduite.
+> **Étude de cas fictive, réalisée dans un cadre académique.** « AgriSouss SARL » est une entreprise fictive : il n'y a pas eu de mission réelle, et les entretiens et observations mentionnés dans ce rapport sont **simulés** pour illustrer la démarche. Les constats sont plausibles pour une PME de ce profil mais ne décrivent aucune entreprise réelle ; aucune donnée réelle (nom, domaine, adresse IP, identifiant) n'est reproduite.
 
 AgriSouss SARL est une PME d'environ **15 salariés** de la région Souss-Massa qui commercialise des produits agricoles (engrais, oligo-éléments, semences) auprès d'exploitants, en direct et via un **site e-commerce** développé en PHP avec une base **MariaDB** chez un **hébergeur mutualisé externe**. Les commandes en ligne sont majoritairement réglées **à la livraison** (pas de paiement par carte sur le site), ce qui exclut du périmètre les exigences de type PCI DSS.
 
@@ -402,7 +402,7 @@ Le plan proposé ne vise pas la certification ISO/IEC 27001 mais une **maturité
 
 ## Limites de l'audit
 
-- Étude de cas **fictive et anonymisée** réalisée dans un cadre académique ; elle n'a pas la valeur d'un audit réalisé par un prestataire qualifié.
+- Étude de cas **fictive** (entretiens et observations simulés) réalisée dans un cadre académique ; elle n'a pas la valeur d'un audit réalisé par un prestataire qualifié.
 - Aucun test technique intrusif ; les vulnérabilités applicatives (SO3) sont **présumées** à partir d'entretiens et doivent être confirmées par un test autorisé.
 - Les références juridiques sont données à titre indicatif et doivent être vérifiées par un juriste ; elles ne constituent pas un avis juridique.
 - Les coûts sont des ordres de grandeur.

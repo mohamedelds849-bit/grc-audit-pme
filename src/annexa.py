@@ -6,7 +6,7 @@ ISO/IEC 27001:2022 - Annexe A (93 mesures, 4 thèmes) : évaluation d'écart Agr
 - Les intitulés français sont une traduction de travail NON OFFICIELLE (la version française
   officielle est publiée par l'AFNOR / ISO ; ne pas citer ces libellés comme texte normatif).
 - Les niveaux de maturité (0-5) sont des appréciations d'auditeur fondées sur entretiens et
-  observations (étude de cas fictive/anonymisée), pas des mesures.
+  observations (étude de cas fictive : entretiens simulés), pas des mesures.
 
 Échelle de maturité (inspirée CMMI) :
  0 Inexistant | 1 Initial / informel | 2 Reproductible, non documenté

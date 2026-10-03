@@ -107,9 +107,9 @@ class ReportDoc(BaseDocTemplate):
         c.line(2 * cm, 1.4 * cm, w - 2 * cm, 1.4 * cm)
         c.setFont(BODY, 7.5)
         c.setFillColor(MUTED)
-        c.drawString(2 * cm, h - 1.3 * cm, "AgriSouss SARL (cas anonymisé) - Mini-audit de sécurité de l'information")
+        c.drawString(2 * cm, h - 1.3 * cm, "AgriSouss SARL (cas fictif) - Mini-audit de sécurité de l'information")
         c.drawRightString(w - 2 * cm, h - 1.3 * cm, "CONFIDENTIEL")
-        c.drawString(2 * cm, 0.95 * cm, "Étude de cas anonymisée - cadre académique - "
+        c.drawString(2 * cm, 0.95 * cm, "Étude de cas fictive - cadre académique - "
                      + self.meta.get("author", "").split(" - ")[0])
         c.drawRightString(w - 2 * cm, 0.95 * cm, f"Page {doc.page}")
         c.restoreState()
@@ -321,7 +321,7 @@ def cover(meta):
                            ("TOPPADDING", (0, 0), (-1, -1), 7), ("BOTTOMPADDING", (0, 0), (-1, -1), 7)]))
     out += [t, Spacer(1, 1.2 * cm)]
     warn = Table([[Paragraph(
-        "<b>Avertissement.</b> Étude de cas <b>anonymisée</b> réalisée dans un <b>cadre académique</b>. "
+        "<b>Avertissement.</b> Étude de cas <b>fictive</b> réalisée dans un <b>cadre académique</b> (entretiens et observations simulés). "
         "« AgriSouss SARL » est un nom fictif ; toute ressemblance avec une entreprise existante serait fortuite. "
         "Ce document ne constitue ni un audit de certification, ni un avis juridique.", S["note"])]],
         colWidths=[17 * cm])

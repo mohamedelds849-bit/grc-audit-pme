@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Build complet du livrable GRC « AgriSouss SARL » (étude de cas anonymisée).
+Build complet du livrable GRC « AgriSouss SARL » (étude de cas fictive).
 
     python build.py            # génère CSV/XLSX, graphiques, Markdown complet et PDF
     python build.py --no-pdf   # tout sauf le PDF

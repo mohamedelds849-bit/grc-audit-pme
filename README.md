@@ -1,7 +1,8 @@
 # grc-audit-pme - Mini-audit de sécurité d'une PME (ISO 27001:2022 · EBIOS RM · loi 09-08)
 
-> **Étude de cas anonymisée, réalisée dans un cadre académique.** « AgriSouss SARL » est une
-> entreprise **fictive**. Aucun nom, domaine, adresse IP, identifiant ou donnée réelle n'est utilisé.
+> **Étude de cas fictive, réalisée dans un cadre académique.** « AgriSouss SARL » est une
+> entreprise **fictive** : il n'y a pas eu de mission réelle, les « entretiens » et « observations » du rapport
+> sont simulés pour illustrer la démarche d'un auditeur. Aucun nom, domaine, adresse IP, identifiant ou donnée réelle n'est utilisé.
 > Ce livrable n'est ni un audit de certification, ni un avis juridique.
 
 ## FR - De quoi s'agit-il ?
@@ -79,7 +80,7 @@ good-practice references), a prioritized 30/90/365-day action plan with **MAD co
 one-page executive summary. Everything is generated from Python data files by `python build.py`
 (reportlab PDF with title page, table of contents and tables; openpyxl workbook; matplotlib charts).
 
-*Anonymized case study, produced in an academic context. Not a certification audit, not legal advice.*
+*Fictional case study (no real engagement; interviews and observations are simulated), produced in an academic context. Not a certification audit, not legal advice.*
 
 Auteur / Author : Mohamed Elansari - élève ingénieur en cybersécurité, Universiapolis Agadir.
 Licence : MIT (code). Le contenu du rapport est fourni à titre pédagogique.
