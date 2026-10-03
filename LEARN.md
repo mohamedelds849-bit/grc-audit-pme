@@ -41,8 +41,10 @@ capacités opérationnelles, domaines de sécurité.
 Exigée par la **clause 6.1.3 d)**. Pour **chaque** mesure de l'Annexe A : nécessaire ou non,
 **justification** de l'inclusion (risque, exigence légale, contrat, bonne pratique) ou de l'exclusion,
 et **état de mise en oeuvre**. C'est le document pivot entre l'appréciation des risques et le plan de
-traitement ; l'auditeur de certification part souvent de là. Dans ce projet : 91 retenues, 2 exclues
-(7.6 pas de zone sécurisée ; 8.11 pas de données de production hors production - à réévaluer).
+traitement ; l'auditeur de certification part souvent de là. Dans ce projet : 92 retenues, 1 exclue
+(7.6 pas de zone sécurisée, hébergement externalisé). J'avais envisagé d'exclure 8.11 (masquage), mais
+le constat 8.33 montre que de vraies commandes servent aux tests : l'exclusion aurait été incohérente,
+la mesure est donc retenue (P3). Bon exemple de vérification croisée DdA ↔ constats.
 
 Erreur fréquente : exclure une mesure « parce qu'elle n'est pas faite ». On exclut seulement si elle
 n'est **pas nécessaire** au regard des risques et des exigences.
@@ -69,16 +71,17 @@ l'ai écrit.
 ## 6. Cadre marocain - l'essentiel
 
 **Loi n° 09-08 (2009)** - protection des personnes physiques à l'égard du traitement des données à
-caractère personnel ; décret d'application n° 2-09-165 ; autorité : **CNDP** (Commission Nationale de
+caractère personnel ; décret d'application n° 2-09-165 du 21 mai 2009 ; autorité : **CNDP** (Commission Nationale de
 contrôle de la protection des Données à caractère Personnel).
 - S'applique à **toute** entité qui traite des DCP au Maroc, publique ou privée → s'applique à une PME.
 - Principes : finalité, proportionnalité, exactitude, durée de conservation limitée ; **consentement** ou autre base légale ; **information** des personnes ; droits d'**accès, rectification, opposition** ; prospection électronique soumise au consentement préalable.
 - **Formalités préalables** auprès de la CNDP : déclaration, ou autorisation pour certains traitements (données sensibles, interconnexions, etc.).
-- **Sécurité** et **sous-traitance** : mesures techniques et organisationnelles ; contrat avec le sous-traitant.
+- **Sécurité** et **sous-traitance** (art. 23) : mesures techniques et organisationnelles ; sous-traitant offrant des garanties suffisantes, contrat écrit ; art. 25-26 : traitement sur instruction, secret professionnel.
+- Repères d'articles : art. 3 qualité des données / conservation ; art. 4 consentement ; art. 5 information ; art. 7-9 accès, rectification, opposition ; art. 10 prospection ; art. 12 déclaration/autorisation ; art. 43-44 transferts.
 - **Transferts vers l'étranger** : vers un pays assurant un niveau de protection suffisant, sinon autorisation/dérogation (point très concret dès qu'on utilise Gmail ou un hébergeur hors Maroc).
 - Pas d'obligation de DPO ni de notification générale des violations comparable au RGPD dans le texte de 2009 (à ma connaissance) ; une refonte a été évoquée - vérifier l'état du droit.
 
-**Loi n° 05-20 (2020)** - cybersécurité ; autorité nationale : **DGSSI** (Administration de la Défense
+**Loi n° 05-20 (2020)** - cybersécurité (décret d'application n° 2-21-406 du 15 juillet 2021) ; autorité nationale : **DGSSI** (Administration de la Défense
 Nationale), avec le **maCERT** pour la veille/alerte.
 - Vise surtout : administrations de l'État, collectivités territoriales, établissements et entreprises publics, **infrastructures d'importance vitale** (IIV), ainsi que certains opérateurs (télécoms) et prestataires (services numériques, cybersécurité) - périmètre exact à relire dans le texte.
 - Obligations typiques : politique de sécurité, classification, **déclaration des incidents**, audits (par prestataires qualifiés pour les IIV), homologation de SI sensibles.
@@ -108,7 +111,7 @@ C'est la liste de toutes les mesures de l'Annexe A avec, pour chacune, l'inclusi
 Oui, si elle n'est pas nécessaire au regard des risques et exigences, avec justification. Ex. : 7.6 « travail en zone sécurisée » pour une PME sans salle serveur, dont l'hébergement est externalisé. On n'exclut jamais une mesure simplement parce qu'elle n'est pas en place.
 
 **5. Expliquez les 5 ateliers d'EBIOS RM.**
-1 cadrage et socle, 2 sources de risque et objectifs visés, 3 scénarios stratégiques via l'écosystème, 4 scénarios opérationnels techniques, 5 traitement et risques résiduels. Les ateliers 3 et 4 donnent la gravité et la vraisemblance.
+1 cadrage et socle, 2 sources de risque et objectifs visés, 3 scénarios stratégiques via l'écosystème, 4 scénarios opérationnels techniques, 5 traitement et risques résiduels. La gravité est évaluée dès l'atelier 1 (événements redoutés) puis reportée sur les scénarios stratégiques (atelier 3) ; la vraisemblance est estimée à l'atelier 4 (scénarios opérationnels).
 
 **6. Pourquoi EBIOS RM plutôt qu'une simple matrice ?**
 Elle part des valeurs métier et des attaquants réalistes, intègre les **parties prenantes** (souvent le maillon faible dans une PME : prestataire web, hébergeur) et produit des scénarios compréhensibles par la direction. Une matrice seule ne dit pas *comment* le risque se réalise.

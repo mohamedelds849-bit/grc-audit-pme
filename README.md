@@ -57,13 +57,13 @@ Le texte se modifie dans `report/rapport_template.md`, les évaluations dans `sr
 (aucune valeur recopiée à la main). Sans openpyxl, seul le CSV est produit ; sans matplotlib, les
 graphiques sont remplacés par une mention. Aucune API, aucun accès réseau.
 
-**Principaux résultats (cas fictif)** : maturité moyenne Annexe A **0,65 / 5** (cible 12 mois ≈ 2,3) ;
+**Principaux résultats (cas fictif)** : maturité moyenne Annexe A **0,64 / 5** (cible 12 mois ≈ 2,3) ;
 2 risques critiques (compromission de la messagerie, rançongiciel), 6 élevés ; conformité 09-08 faible
 (aucune déclaration CNDP, transferts hors Maroc non instruits) ; 23 actions, dont 10 « quick wins » à
-30 jours quasi gratuits (MFA, sauvegardes, revue des accès, anti-fraude au RIB).
+30 jours à faible coût (MFA, sauvegardes, revue des accès, anti-fraude au RIB).
 
-**Limites / incertitudes assumées** : numéros d'articles de la loi 09-08 et référence du décret
-d'application de la loi 05-20 à vérifier sur le Bulletin officiel ; libellés français des mesures =
+**Limites / incertitudes assumées** : articles de la loi 09-08 et décret n° 2-21-406 (loi 05-20) relus sur
+le portail officiel Adala, à faire confirmer par un juriste ; position CNDP sur les cookies à vérifier ; libellés français des mesures =
 traduction de travail non officielle ; coûts = ordres de grandeur ; vulnérabilités applicatives
 présumées (pas de test intrusif).
 

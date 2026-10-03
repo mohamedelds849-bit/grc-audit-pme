@@ -15,7 +15,7 @@ classification: Confidentiel - diffusion restreinte à la gérance (cas fictif, 
 
 **En une phrase :** l'entreprise fonctionne bien au quotidien, mais sa sécurité repose sur la bonne volonté de quelques personnes et non sur des règles ; **un seul email piégé ou un seul poste infecté pourrait bloquer les ventes et exposer le fichier clients**.
 
-**Niveau actuel :** maturité moyenne **0,7 / 5** (cible à 12 mois : **2,3 / 5**, niveau raisonnable pour une PME de cette taille). 2 risques sont jugés **critiques** et 6 **élevés** sur 12.
+**Niveau actuel :** maturité moyenne **0,64 / 5** (cible à 12 mois : **2,3 / 5**, niveau raisonnable pour une PME de cette taille). 2 risques sont jugés **critiques** et 6 **élevés** sur 12.
 
 ![Maturité par thème : actuelle vs cible](../outputs/figures/maturite_synthese.png){width=13cm}
 
@@ -26,7 +26,7 @@ classification: Confidentiel - diffusion restreinte à la gérance (cas fictif, 
 - **Fuite du fichier clients** via une faille du site web, avec une obligation légale (loi 09-08) qui n'est pas encore respectée (pas de déclaration à la CNDP).
 - **Faux changement de RIB** d'un fournisseur par email : un virement envoyé à un escroc.
 
-**Ce qu'il faut faire en priorité (30 jours, coût quasi nul)**
+**Ce qu'il faut faire en priorité (30 jours, coût faible)**
 
 1. Activer la double authentification sur **tous** les comptes (email, hébergeur, nom de domaine).
 2. Mettre en place des **sauvegardes** dont une hors ligne, et vérifier une fois qu'on sait les restaurer.
@@ -34,7 +34,7 @@ classification: Confidentiel - diffusion restreinte à la gérance (cas fictif, 
 4. Règle « deux personnes + un appel » pour tout virement ou changement de RIB.
 5. Remplacer la clé d'accès exposée dans le code du site et mettre à jour le site.
 
-**Budget indicatif :** 3 500 à 26 000 MAD sur 30 jours, 21 000 à 63 500 MAD sur 90 jours, 18 000 à 40 000 MAD sur 12 mois (estimations hors taxes, à confirmer par devis). À mettre en regard d'un arrêt des ventes de plusieurs jours en haute saison ou d'une sanction de la CNDP.
+**Budget indicatif :** 3 500 à 26 000 MAD sur 30 jours, 36 000 à 88 500 MAD sur 90 jours, 18 000 à 40 000 MAD sur 12 mois (estimations hors taxes, à confirmer par devis). À mettre en regard d'un arrêt des ventes de plusieurs jours en haute saison ou d'une sanction de la CNDP.
 
 **Décision attendue :** valider le plan à 30 jours et désigner un **référent sécurité** interne (2 à 4 heures par semaine).
 
@@ -99,7 +99,7 @@ Il ne s'agit **pas** d'un audit de certification ISO/IEC 27001, ni d'un test d'i
 | Texte | Objet | Applicable à AgriSouss ? | Utilisation dans l'audit |
 |---|---|---|---|
 | **Loi n° 09-08** (2009) relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, et son décret d'application n° 2-09-165 | Données personnelles ; autorité de contrôle : **CNDP** | **Oui, directement** : l'entreprise traite des données de clients, prospects et salariés | Check-list de conformité (section 6) |
-| **Loi n° 05-20** (2020) relative à la cybersécurité, et son décret d'application (n° 2-21-406, 2021 - référence à vérifier) | Sécurité des SI des administrations, collectivités, établissements et entreprises publics, infrastructures d'importance vitale (IIV), certains opérateurs et prestataires | **Non directement** : une SARL privée qui n'est ni IIV, ni opérateur télécom, ni prestataire de services numériques/cybersécurité visé n'entre pas dans le champ des obligations | **Référence de bonnes pratiques** (déclaration d'incident, homologation, audit) |
+| **Loi n° 05-20** (2020) relative à la cybersécurité, et son décret d'application n° 2-21-406 du 15 juillet 2021 | Sécurité des SI des administrations, collectivités, établissements et entreprises publics, infrastructures d'importance vitale (IIV), certains opérateurs et prestataires | **Non directement** : une SARL privée qui n'est ni IIV, ni opérateur télécom, ni prestataire de services numériques/cybersécurité visé n'entre pas dans le champ des obligations | **Référence de bonnes pratiques** (déclaration d'incident, homologation, audit) |
 | **DNSSI** - Directive Nationale de la Sécurité des Systèmes d'Information (DGSSI, 2014) | Mesures de sécurité de référence, largement inspirées de l'ISO/IEC 27001/27002 | **Non obligatoire** : destinée aux administrations, organismes publics et IIV | Référence complémentaire de bonnes pratiques |
 | **Code pénal, art. 607-3 à 607-11** (loi n° 07-03 relative aux atteintes aux systèmes de traitement automatisé des données) | Incrimine l'accès frauduleux, l'entrave, l'altération de données | **Oui** (protège l'entreprise victime) | Base des dépôts de plainte ; conservation des preuves (5.28) |
 | **ISO/IEC 27001 / 27002:2022** | Normes volontaires | **Volontaire** ; pas de certification visée | Grille d'analyse d'écart et DdA |
@@ -108,7 +108,7 @@ Il ne s'agit **pas** d'un audit de certification ISO/IEC 27001, ni d'un test d'i
 
 - La **loi 05-20** désigne la **DGSSI** (Direction Générale de la Sécurité des Systèmes d'Information, rattachée à l'Administration de la Défense Nationale) comme autorité nationale de cybersécurité ; elle impose aux entités assujetties notamment une politique de sécurité, la classification des actifs, la déclaration des incidents et des audits. AgriSouss n'y est pas assujettie ; nous en retenons l'**esprit** (déclarer, se préparer, auditer). Si AgriSouss devenait fournisseur d'une entité assujettie (par exemple un office public), des exigences contractuelles pourraient en découler.
 - La **loi 09-08** s'applique pleinement : fichier clients du site, commandes, données de livraison, fichiers RH, éventuelle vidéosurveillance. Des **transferts hors du Maroc** existent de fait (messagerie Gmail/Google Drive, hébergeur dont les serveurs peuvent être à l'étranger) et relèvent du régime des transferts de la loi, qui suppose un pays offrant un niveau de protection suffisant ou une autorisation/dérogation : **point à instruire avec la CNDP**.
-- Les numéros d'articles de la loi 09-08 cités en section 6 sont donnés pour faciliter la lecture ; **ils doivent être vérifiés sur le texte publié au Bulletin officiel** avant toute utilisation juridique. Un projet de réforme du cadre des données personnelles a été évoqué publiquement : **l'état du droit est à vérifier à la date de l'audit**. Ce rapport ne constitue pas un avis juridique.
+- Les numéros d'articles de la loi 09-08 cités en section 6 ont été relus sur le texte consolidé publié par le portail officiel Adala (ministère de la Justice) ; ils restent **à confirmer par un juriste** avant toute utilisation juridique. Un projet de réforme du cadre des données personnelles a été évoqué publiquement : **l'état du droit est à vérifier à la date de l'audit**. Ce rapport ne constitue pas un avis juridique.
 - Le **RGPD** européen n'est pas applicable a priori (clientèle marocaine, pas de ciblage de résidents de l'UE).
 
 <!-- pagebreak -->
@@ -212,7 +212,7 @@ Parties prenantes critiques : **hébergeur** (dépendance totale du site), **dé
 | R06 | Perte durable des données du site faute de sauvegarde exploitable | Accident / erreur (hors sources intentionnelles EBIOS) | 3 | 2 | 6 Modéré | 5.30, 5.37, 8.13, 8.14 |
 | R07 | Fraude au faux fournisseur / changement de RIB par email usurpé | SR2 Fraudeur | 3 | 3 | 9 Élevé | 5.3, 5.14, 6.3 |
 | R08 | Défiguration ou injection de contenu malveillant (XSS, SEO spam) sur le site | SR3 Hacktiviste / défaceur | 2 | 3 | 6 Modéré | 8.9, 8.25, 8.28, 8.29 |
-| R09 | Non-conformité à la loi 09-08 (absence de déclaration CNDP, transferts hors Maroc non encadrés) | Exigence réglementaire (contrôle CNDP, plainte client) | 3 | 3 | 9 Élevé | 5.31, 5.34, 5.20, 8.10 |
+| R09 | Non-conformité à la loi 09-08 (absence de déclaration CNDP, transferts hors Maroc non encadrés) | Exigence réglementaire (contrôle CNDP, plainte client) | 3 | 3 | 9 Élevé | 5.20, 5.31, 5.34, 8.10, 8.11 |
 | R10 | Intrusion sur le réseau local via le Wi-Fi (clé partagée, box non durcie) | SR4 Ancien employé / SR1 opportuniste à proximité | 2 | 2 | 4 Modéré | 8.9, 8.20, 8.22 |
 | R11 | Accès persistants d'anciens salariés ou prestataires | SR4 Ancien employé / prestataire mécontent | 3 | 3 | 9 Élevé | 5.11, 5.18, 6.5, 8.30 |
 | R12 | Vol ou perte d'un PC portable / smartphone non chiffré contenant des données clients | SR6 Voleur opportuniste | 2 | 3 | 6 Modéré | 7.9, 8.1, 8.24 |
@@ -230,21 +230,21 @@ Parties prenantes critiques : **hébergeur** (dépendance totale du site), **dé
 
 ## 4.7 Atelier 5 - Stratégie de traitement
 
-Tous les risques **critiques et élevés** sont **réduits** par le plan d'action (section 7). Aucun risque n'est transféré à ce stade ; une **cyber-assurance** pourra être étudiée une fois les mesures de base en place (les assureurs exigent généralement MFA et sauvegardes). Le risque résiduel R12 (vol d'un portable) reste « vraisemblable », mais sa gravité devient mineure grâce au chiffrement ; il est **accepté**. Les niveaux résiduels supposent que les actions soient effectivement réalisées et vérifiées.
+Tous les risques **critiques et élevés** sont **réduits** par le plan d'action (section 7). Aucun risque n'est transféré à ce stade ; une **cyber-assurance** pourra être étudiée une fois les mesures de base en place (les assureurs exigent généralement MFA et sauvegardes). Le risque résiduel R12 (vol d'un portable) reste « très vraisemblable » (V3), mais sa gravité devient mineure grâce au chiffrement ; il est **accepté**. Les niveaux résiduels supposent que les actions soient effectivement réalisées et vérifiées.
 
 | Réf. | Niveau initial | Actions | Niveau résiduel visé | Décision |
 |---|---|---|---|---|
-| R01 | 12 Critique | A01, A03, A12, A19 | 4 Modéré | Réduit puis accepté (surveillance) |
-| R02 | 12 Critique | A04, A09, A12, A20 | 3 Faible | Accepté après traitement |
-| R03 | 9 Élevé | A05, A17, A21 | 3 Faible | Accepté après traitement |
+| R01 | 12 Critique | A01, A03, A12, A16, A18, A19 | 4 Modéré | Réduit puis accepté (surveillance) |
+| R02 | 12 Critique | A04, A09, A12, A16, A20 | 3 Faible | Accepté après traitement |
+| R03 | 9 Élevé | A05, A16, A17, A18, A21, A23 | 3 Faible | Accepté après traitement |
 | R04 | 8 Élevé | A02 | 2 Faible | Accepté après traitement |
-| R05 | 8 Élevé | A01, A03, A08 | 4 Modéré | Réduit puis accepté (surveillance) |
+| R05 | 8 Élevé | A01, A03, A08, A18 | 4 Modéré | Réduit puis accepté (surveillance) |
 | R06 | 6 Modéré | A04, A20 | 3 Faible | Accepté après traitement |
 | R07 | 9 Élevé | A07, A12 | 3 Faible | Accepté après traitement |
-| R08 | 6 Modéré | A05, A17, A23 | 2 Faible | Accepté après traitement |
-| R09 | 9 Élevé | A10, A13, A14, A15 | 2 Faible | Accepté après traitement |
+| R08 | 6 Modéré | A05, A17, A21, A23 | 2 Faible | Accepté après traitement |
+| R09 | 9 Élevé | A10, A13, A14, A15, A19 | 2 Faible | Accepté après traitement |
 | R10 | 4 Modéré | A06 | 2 Faible | Accepté après traitement |
-| R11 | 9 Élevé | A08, A11, A14 | 3 Faible | Accepté après traitement |
+| R11 | 9 Élevé | A08, A11, A14, A19 | 3 Faible | Accepté après traitement |
 | R12 | 6 Modéré | A09 | 3 Faible | Accepté après traitement |
 
 <!-- pagebreak -->
@@ -272,8 +272,8 @@ Une certification n'est **pas recommandée** à court terme : le coût (accompag
 | Organisationnel (5.1-5.37) | 37 | 37 | 0.49 | 2.41 | 1.92 |
 | Humain (6.1-6.8) | 8 | 8 | 0.62 | 2.50 | 1.88 |
 | Physique (7.1-7.14) | 14 | 13 | 0.92 | 1.92 | 1.00 |
-| Technologique (8.1-8.34) | 34 | 33 | 0.73 | 2.30 | 1.57 |
-| **Global (pondéré)** | **93** | **91** | **0.65** | **2.31** | **1.66** |
+| Technologique (8.1-8.34) | 34 | 34 | 0.71 | 2.29 | 1.58 |
+| **Global (pondéré)** | **93** | **92** | **0.64** | **2.30** | **1.66** |
 
 ![Figure 1 - Maturité Annexe A par thème](../outputs/figures/maturite_par_theme.png){width=15.5cm}
 
@@ -300,7 +300,7 @@ Une certification n'est **pas recommandée** à court terme : le coût (accompag
 | 8.2 Droits d'accès privilégiés | Tous les utilisateurs sont administrateurs locaux de leur poste. | Comptes utilisateurs standards ; un compte admin séparé par poste. | 0→3 | R02, R05 |
 | 8.4 Accès au code source | Code du site dans un dépôt Git du prestataire ; un secret (clé d'API tierce) présent dans l'historique. | Dépôt privé propriété d'AgriSouss ; secrets hors dépôt ; rotation de la clé. | 1→3 | R04, R08 |
 | 8.5 Authentification sécurisée | MFA activée sur 2 comptes Google sur 9 ; pas de MFA sur l'hébergeur ni le bureau d'enregistrement du domaine. | MFA obligatoire sur messagerie, hébergeur, domaine, back-office. | 1→3 | R01, R05 |
-| 8.8 Gestion des vulnérabilités techniques | Version de PHP en fin de support sur l'hébergement ; mises à jour Windows reportées. | Mises à jour automatiques ; montée de version PHP ; scan de vulnérabilités trimestriel. | 1→3 | R03, R08 |
+| 8.8 Gestion des vulnérabilités techniques | Version de PHP en fin de support sur l'hébergement ; mises à jour Windows reportées. | Mises à jour automatiques ; montée de version PHP ; scan de vulnérabilités trimestriel. | 1→3 | R02, R03, R08 |
 | 8.13 Sauvegarde des informations | Sauvegardes automatiques de l'hébergeur (rétention inconnue) ; PC comptable non sauvegardé ; aucun test de restauration. | Règle 3-2-1 : export BDD quotidien + copie hors hébergeur + copie hors ligne ; test trimestriel. | 1→3 | R02, R06 |
 | 8.20 Sécurité des réseaux | Box FAI : WPS activé, clé Wi-Fi partagée depuis plusieurs années, interface d'administration avec mot de passe par défaut. | Changer le mot de passe admin, désactiver WPS, WPA2/WPA3 avec clé forte, firmware à jour. | 1→3 | R10 |
 | 8.28 Codage sécurisé | Code PHP hétérogène : requêtes préparées sur la plupart des pages, mais quelques concaténations SQL et sorties non échappées. | Requêtes préparées partout, échappement des sorties, jetons CSRF, revue de code. | 1→3 | R03, R08 |
@@ -312,7 +312,7 @@ Le tableau complet des 93 mesures (état actuel, maturité, écart, priorité, r
 
 # 6. Conformité à la loi 09-08 - check-list
 
-Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. Références d'articles indicatives (voir réserve en section 2).
+Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. Références d'articles relues sur le texte consolidé de la loi (voir réserve en section 2).
 
 | # | Exigence | Réf. indicative | Constat | Statut | Action |
 |---|---|---|---|---|---|
@@ -326,9 +326,9 @@ Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. R�
 | 8 | **Cookies** et traceurs : information et choix de l'utilisateur | Pas de disposition spécifique identifiée dans la loi (principes d'information et de consentement) - position CNDP à vérifier | Outil de mesure d'audience déposé sans bandeau | ✘ | A10 |
 | 9 | **Durées de conservation** définies et appliquées | Art. 3 | Commandes conservées sans limite | ✘ | A15 |
 | 10 | **Sécurité** des traitements (mesures techniques et organisationnelles) | Art. 23 | Voir sections 4 et 5 : MFA, sauvegarde, droits insuffisants | ✘ | A01-A09 |
-| 11 | **Sous-traitants** : garanties de sécurité et contrat écrit (hébergeur, prestataire web, transporteur, cabinet comptable) | Art. 23 (sous-traitance - à vérifier) | Aucun contrat avec clauses de protection des données | ✘ | A14 |
+| 11 | **Sous-traitants** : garanties de sécurité et contrat écrit (hébergeur, prestataire web, transporteur, cabinet comptable) | Art. 23 §2 à 4 (choix du sous-traitant, contrat écrit) | Aucun contrat avec clauses de protection des données | ✘ | A14 |
 | 12 | **Transferts vers l'étranger** (Google, hébergeur) : pays adéquat, ou autorisation/dérogation | Art. 43 et 44 | Localisation des données non connue ; aucune démarche | ? | A13 |
-| 13 | Confidentialité : personnel habilité, engagement de confidentialité | Art. 26 (à vérifier) | Pas de clause de confidentialité dans les contrats | ✘ | A11, A14 |
+| 13 | Confidentialité : personnel habilité, engagement de confidentialité | Art. 25 (instructions) et 26 (secret professionnel) | Pas de clause de confidentialité dans les contrats | ✘ | A11, A14 |
 | 14 | Données des salariés (RH) : information, accès restreint | Art. 3 à 5 | Dossiers RH dans un dossier Drive partagé | ◐ | A11, A13 |
 | 15 | Vidéosurveillance éventuelle : déclaration et affichage | Formalités CNDP | Pas de caméra dans les bureaux à ce jour | ✔ | Si installation : déclarer |
 | 16 | Gestion des violations de données : procédure interne, information de la CNDP si pertinent | Pas d'obligation générale de notification identifiée dans la loi de 2009 (contrairement au RGPD) - bonne pratique | Aucune procédure | ✘ | A16 |
@@ -366,7 +366,7 @@ Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. R�
 | A14 | Contrats/avenants avec hébergeur, prestataire web, transporteur, cabinet comptable : clauses sécurité, confidentialité, sous-traitance 09-08 | 2 j | 3 000 - 8 000 (juriste) | Gérance + juriste | R09, R11 |
 | A15 | Inventaire des actifs + registre des traitements + durées de conservation et purge des anciennes commandes | 2 j | 0 | Référent sécurité | R09 |
 | A16 | Fiche réflexe incident (contacts hébergeur, prestataire, maCERT, CNDP, police) + registre des incidents | 1 j | 0 - 2 000 | Référent + consultant | R01, R02, R03 |
-| A17 | Audit de sécurité applicatif du site (revue de code + test d'intrusion autorisé) et correction des injections SQL/XSS | 5-8 j | 10 000 - 25 000 | Prestataire qualifié | R03, R08 |
+| A17 | Audit de sécurité applicatif du site (revue de code + test d'intrusion autorisé) et correction des injections SQL/XSS | 5-8 j | 25 000 - 50 000 | Prestataire qualifié | R03, R08 |
 | A18 | Journalisation : connexions back-office, alertes de connexion Google, surveillance de disponibilité gratuite | 1-2 j | 0 - 3 000 | Prestataire web | R01, R03, R05 |
 | A23 | Mettre le site derrière un CDN/WAF (offre gratuite ou d'entrée de gamme) ; verrou de transfert du domaine | 0,5 j | 0 - 2 500 / an | Prestataire web | R08, R03 |
 
@@ -384,9 +384,9 @@ Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. R�
 | Horizon | Fourchette basse (MAD) | Fourchette haute (MAD) |
 |---|---|---|
 | Quick wins (0 à 30 jours) | 3 500 | 26 000 |
-| Structurer (30 à 90 jours) | 21 000 | 63 500 |
+| Structurer (30 à 90 jours) | 36 000 | 88 500 |
 | Pérenniser (3 à 12 mois) | 18 000 | 40 000 |
-| **Total première année** | **42 500** | **129 500** |
+| **Total première année** | **57 500** | **154 500** |
 
 Les postes « / an » (gestionnaire de mots de passe, messagerie professionnelle, CDN) sont récurrents.
 
@@ -411,7 +411,7 @@ Le plan proposé ne vise pas la certification ISO/IEC 27001 mais une **maturité
 
 # Annexe A - Projet de Déclaration d'applicabilité (DdA / SoA)
 
-La DdA, exigée par l'ISO/IEC 27001:2022 (clause 6.1.3 d), liste les mesures nécessaires, la justification de leur inclusion ou exclusion et leur état de mise en oeuvre. Ce projet couvre les 93 mesures de l'Annexe A ; **91 sont retenues, 2 exclues** avec justification. Intitulés en anglais (texte de la norme) ; libellés français de l'audit = traduction de travail non officielle.
+La DdA, exigée par l'ISO/IEC 27001:2022 (clause 6.1.3 d), liste les mesures nécessaires, la justification de leur inclusion ou exclusion et leur état de mise en oeuvre. Ce projet couvre les 93 mesures de l'Annexe A ; **92 mesures retenues, 1 exclusion(s)** avec justification. Intitulés en anglais (texte de la norme) ; libellés français de l'audit = traduction de travail non officielle.
 
 ## A.5 Organisationnel (5.1-5.37)
 
@@ -498,10 +498,10 @@ La DdA, exigée par l'ISO/IEC 27001:2022 (clause 6.1.3 d), liste les mesures né
 | 8.5 | Secure authentication | Oui | Traitement des risques R01, R05 | Partiel | A01, A19 |
 | 8.6 | Capacity management | Oui | Traitement des risques R06 | Partiel | - |
 | 8.7 | Protection against malware | Oui | Traitement des risques R02 | Partiel | A09 |
-| 8.8 | Management of technical vulnerabilities | Oui | Traitement des risques R03, R08 | Partiel | A05, A17 |
+| 8.8 | Management of technical vulnerabilities | Oui | Traitement des risques R02, R03, R08 | Partiel | A05, A17 |
 | 8.9 | Configuration management | Oui | Traitement des risques R08, R10 | Non mis en oeuvre | A05 |
 | 8.10 | Information deletion | Oui | Traitement des risques R03, R09 | Non mis en oeuvre | A15 |
-| 8.11 | Data masking | Non | Exclue provisoirement : aucune copie de données de production hors production. À réintégrer si une préproduction est créée (action A21) - lien avec 8.33. | Non applicable | - |
+| 8.11 | Data masking | Oui | Traitement des risques R03, R09 ; minimisation (loi 09-08, art. 3). Exclusion initialement envisagée puis écartée : des données réelles sont utilisées en test (8.33). | Non mis en oeuvre | A15 |
 | 8.12 | Data leakage prevention | Oui | Traitement des risques R03 | Non mis en oeuvre | - |
 | 8.13 | Information backup | Oui | Traitement des risques R02, R06 | Partiel | A04 |
 | 8.14 | Redundancy of information processing facilities | Oui | Traitement des risques R06 | Partiel | - |
@@ -514,7 +514,7 @@ La DdA, exigée par l'ISO/IEC 27001:2022 (clause 6.1.3 d), liste les mesures né
 | 8.21 | Security of network services | Oui | Traitement des risques R08 | Partiel | A23 |
 | 8.22 | Segregation of networks | Oui | Traitement des risques R10 | Non mis en oeuvre | A06 |
 | 8.23 | Web filtering | Oui | Traitement des risques R02 | Non mis en oeuvre | - |
-| 8.24 | Use of cryptography | Oui | Traitement des risques R03, R12 | Partiel | A02, A09 |
+| 8.24 | Use of cryptography | Oui | Traitement des risques R03, R04, R12 | Partiel | A02, A09 |
 | 8.25 | Secure development life cycle | Oui | Traitement des risques R03, R08 | Non mis en oeuvre | A21 |
 | 8.26 | Application security requirements | Oui | Traitement des risques R03, R08 | Non mis en oeuvre | - |
 | 8.27 | Secure system architecture and engineering principles | Oui | Traitement des risques R03 | Partiel | - |

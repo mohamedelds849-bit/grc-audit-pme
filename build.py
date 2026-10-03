@@ -269,7 +269,7 @@ def build_markdown(charts):
 
     rep = {}
     rep["DATE"] = REPORT_DATE
-    rep["SCORE_GLOBAL"] = f"{global_score():.1f}".replace(".", ",")
+    rep["SCORE_GLOBAL"] = f"{global_score():.2f}".replace(".", ",")
     app = [r for r in annexa.controls() if r["applicable"]]
     rep["SCORE_TARGET"] = f"{sum(r['cible'] for r in app) / len(app):.1f}".replace(".", ",")
     rep["NB_RISK_CRIT"] = str(sum(r["niveau"] == "Critique" for r in register.RISKS))

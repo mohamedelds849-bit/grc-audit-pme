@@ -248,7 +248,7 @@ C("8.6", "Capacity management", "Dimensionnement", 2, 2, "P3", "R06",
 C("8.7", "Protection against malware", "Protection contre les programmes malveillants", 2, 3, "P2", "R02",
   "Microsoft Defender actif par défaut sur la plupart des postes, non supervisé.",
   "Vérifier l'activation partout ; macros Office bloquées ; filtrage des pièces jointes.")
-C("8.8", "Management of technical vulnerabilities", "Gestion des vulnérabilités techniques", 1, 3, "P1", "R03, R08",
+C("8.8", "Management of technical vulnerabilities", "Gestion des vulnérabilités techniques", 1, 3, "P1", "R02, R03, R08",
   "Version de PHP en fin de support sur l'hébergement ; mises à jour Windows reportées.",
   "Mises à jour automatiques ; montée de version PHP ; scan de vulnérabilités trimestriel.")
 C("8.9", "Configuration management", "Gestion des configurations", 0, 2, "P2", "R08, R10",
@@ -257,10 +257,10 @@ C("8.9", "Configuration management", "Gestion des configurations", 0, 2, "P2", "
 C("8.10", "Information deletion", "Suppression des informations", 0, 2, "P2", "R03, R09",
   "Commandes conservées indéfiniment dans la base.",
   "Durées de conservation + purge/anonymisation annuelle des anciennes commandes.")
-C("8.11", "Data masking", "Masquage des données", None, None, "-", "",
-  "Pas d'environnement de test contenant des données réelles à ce jour.",
-  "Non applicable à ce stade.", applicable=False,
-  justif="Exclue provisoirement : aucune copie de données de production hors production. À réintégrer si une préproduction est créée (action A21) - lien avec 8.33.")
+C("8.11", "Data masking", "Masquage des données", 0, 2, "P3", "R03, R09",
+  "Tests occasionnels avec de vraies commandes clients (voir 8.33) ; exports complets du fichier transmis au transporteur sans réduction des champs.",
+  "Pseudonymiser/anonymiser les données utilisées hors production et les anciennes commandes (lien 8.10, 8.33) ; exports transporteur limités au strict nécessaire.",
+  justif="Traitement des risques R03, R09 ; minimisation (loi 09-08, art. 3). Exclusion initialement envisagée puis écartée : des données réelles sont utilisées en test (8.33).")
 C("8.12", "Data leakage prevention", "Prévention de la fuite de données", 0, 1, "P3", "R03",
   "Aucune mesure ; exports clients possibles vers comptes personnels.",
   "Mesures légères : restriction des partages externes Drive, pas d'outil DLP dédié.")
@@ -297,7 +297,7 @@ C("8.22", "Segregation of networks", "Cloisonnement des réseaux", 0, 2, "P2", "
 C("8.23", "Web filtering", "Filtrage web", 0, 1, "P3", "R02",
   "Aucun filtrage.",
   "DNS filtrant gratuit sur la box (filtrage des domaines malveillants connus).")
-C("8.24", "Use of cryptography", "Utilisation de la cryptographie", 1, 2, "P2", "R03, R12",
+C("8.24", "Use of cryptography", "Utilisation de la cryptographie", 1, 2, "P2", "R03, R04, R12",
   "TLS sur le site ; aucun chiffrement des postes ni des sauvegardes.",
   "Chiffrement des portables et des sauvegardes hors site ; règle de gestion des clés.")
 C("8.25", "Secure development life cycle", "Cycle de vie de développement sécurisé", 0, 2, "P2", "R03, R08",

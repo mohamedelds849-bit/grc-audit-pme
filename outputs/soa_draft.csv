@@ -65,10 +65,10 @@
 8.5;Secure authentication;Oui;Traitement des risques R01, R05;Partiel;A01, A19
 8.6;Capacity management;Oui;Traitement des risques R06;Partiel;
 8.7;Protection against malware;Oui;Traitement des risques R02;Partiel;A09
-8.8;Management of technical vulnerabilities;Oui;Traitement des risques R03, R08;Partiel;A05, A17
+8.8;Management of technical vulnerabilities;Oui;Traitement des risques R02, R03, R08;Partiel;A05, A17
 8.9;Configuration management;Oui;Traitement des risques R08, R10;Non mis en oeuvre;A05
 8.10;Information deletion;Oui;Traitement des risques R03, R09;Non mis en oeuvre;A15
-8.11;Data masking;Non;Exclue provisoirement : aucune copie de données de production hors production. À réintégrer si une préproduction est créée (action A21) - lien avec 8.33.;Non applicable;
+8.11;Data masking;Oui;"Traitement des risques R03, R09 ; minimisation (loi 09-08, art. 3). Exclusion initialement envisagée puis écartée : des données réelles sont utilisées en test (8.33).";Non mis en oeuvre;A15
 8.12;Data leakage prevention;Oui;Traitement des risques R03;Non mis en oeuvre;
 8.13;Information backup;Oui;Traitement des risques R02, R06;Partiel;A04
 8.14;Redundancy of information processing facilities;Oui;Traitement des risques R06;Partiel;
@@ -81,7 +81,7 @@
 8.21;Security of network services;Oui;Traitement des risques R08;Partiel;A23
 8.22;Segregation of networks;Oui;Traitement des risques R10;Non mis en oeuvre;A06
 8.23;Web filtering;Oui;Traitement des risques R02;Non mis en oeuvre;
-8.24;Use of cryptography;Oui;Traitement des risques R03, R12;Partiel;A02, A09
+8.24;Use of cryptography;Oui;Traitement des risques R03, R04, R12;Partiel;A02, A09
 8.25;Secure development life cycle;Oui;Traitement des risques R03, R08;Non mis en oeuvre;A21
 8.26;Application security requirements;Oui;Traitement des risques R03, R08;Non mis en oeuvre;
 8.27;Secure system architecture and engineering principles;Oui;Traitement des risques R03;Partiel;

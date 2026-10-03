@@ -24,7 +24,7 @@ classification: Confidentiel - diffusion restreinte à la gérance (cas fictif, 
 - **Fuite du fichier clients** via une faille du site web, avec une obligation légale (loi 09-08) qui n'est pas encore respectée (pas de déclaration à la CNDP).
 - **Faux changement de RIB** d'un fournisseur par email : un virement envoyé à un escroc.
 
-**Ce qu'il faut faire en priorité (30 jours, coût quasi nul)**
+**Ce qu'il faut faire en priorité (30 jours, coût faible)**
 
 1. Activer la double authentification sur **tous** les comptes (email, hébergeur, nom de domaine).
 2. Mettre en place des **sauvegardes** dont une hors ligne, et vérifier une fois qu'on sait les restaurer.
@@ -97,7 +97,7 @@ Il ne s'agit **pas** d'un audit de certification ISO/IEC 27001, ni d'un test d'i
 | Texte | Objet | Applicable à AgriSouss ? | Utilisation dans l'audit |
 |---|---|---|---|
 | **Loi n° 09-08** (2009) relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, et son décret d'application n° 2-09-165 | Données personnelles ; autorité de contrôle : **CNDP** | **Oui, directement** : l'entreprise traite des données de clients, prospects et salariés | Check-list de conformité (section 6) |
-| **Loi n° 05-20** (2020) relative à la cybersécurité, et son décret d'application (n° 2-21-406, 2021 - référence à vérifier) | Sécurité des SI des administrations, collectivités, établissements et entreprises publics, infrastructures d'importance vitale (IIV), certains opérateurs et prestataires | **Non directement** : une SARL privée qui n'est ni IIV, ni opérateur télécom, ni prestataire de services numériques/cybersécurité visé n'entre pas dans le champ des obligations | **Référence de bonnes pratiques** (déclaration d'incident, homologation, audit) |
+| **Loi n° 05-20** (2020) relative à la cybersécurité, et son décret d'application n° 2-21-406 du 15 juillet 2021 | Sécurité des SI des administrations, collectivités, établissements et entreprises publics, infrastructures d'importance vitale (IIV), certains opérateurs et prestataires | **Non directement** : une SARL privée qui n'est ni IIV, ni opérateur télécom, ni prestataire de services numériques/cybersécurité visé n'entre pas dans le champ des obligations | **Référence de bonnes pratiques** (déclaration d'incident, homologation, audit) |
 | **DNSSI** - Directive Nationale de la Sécurité des Systèmes d'Information (DGSSI, 2014) | Mesures de sécurité de référence, largement inspirées de l'ISO/IEC 27001/27002 | **Non obligatoire** : destinée aux administrations, organismes publics et IIV | Référence complémentaire de bonnes pratiques |
 | **Code pénal, art. 607-3 à 607-11** (loi n° 07-03 relative aux atteintes aux systèmes de traitement automatisé des données) | Incrimine l'accès frauduleux, l'entrave, l'altération de données | **Oui** (protège l'entreprise victime) | Base des dépôts de plainte ; conservation des preuves (5.28) |
 | **ISO/IEC 27001 / 27002:2022** | Normes volontaires | **Volontaire** ; pas de certification visée | Grille d'analyse d'écart et DdA |
@@ -106,7 +106,7 @@ Il ne s'agit **pas** d'un audit de certification ISO/IEC 27001, ni d'un test d'i
 
 - La **loi 05-20** désigne la **DGSSI** (Direction Générale de la Sécurité des Systèmes d'Information, rattachée à l'Administration de la Défense Nationale) comme autorité nationale de cybersécurité ; elle impose aux entités assujetties notamment une politique de sécurité, la classification des actifs, la déclaration des incidents et des audits. AgriSouss n'y est pas assujettie ; nous en retenons l'**esprit** (déclarer, se préparer, auditer). Si AgriSouss devenait fournisseur d'une entité assujettie (par exemple un office public), des exigences contractuelles pourraient en découler.
 - La **loi 09-08** s'applique pleinement : fichier clients du site, commandes, données de livraison, fichiers RH, éventuelle vidéosurveillance. Des **transferts hors du Maroc** existent de fait (messagerie Gmail/Google Drive, hébergeur dont les serveurs peuvent être à l'étranger) et relèvent du régime des transferts de la loi, qui suppose un pays offrant un niveau de protection suffisant ou une autorisation/dérogation : **point à instruire avec la CNDP**.
-- Les numéros d'articles de la loi 09-08 cités en section 6 sont donnés pour faciliter la lecture ; **ils doivent être vérifiés sur le texte publié au Bulletin officiel** avant toute utilisation juridique. Un projet de réforme du cadre des données personnelles a été évoqué publiquement : **l'état du droit est à vérifier à la date de l'audit**. Ce rapport ne constitue pas un avis juridique.
+- Les numéros d'articles de la loi 09-08 cités en section 6 ont été relus sur le texte consolidé publié par le portail officiel Adala (ministère de la Justice) ; ils restent **à confirmer par un juriste** avant toute utilisation juridique. Un projet de réforme du cadre des données personnelles a été évoqué publiquement : **l'état du droit est à vérifier à la date de l'audit**. Ce rapport ne constitue pas un avis juridique.
 - Le **RGPD** européen n'est pas applicable a priori (clientèle marocaine, pas de ciblage de résidents de l'UE).
 
 <!-- pagebreak -->
@@ -210,7 +210,7 @@ Parties prenantes critiques : **hébergeur** (dépendance totale du site), **dé
 
 ## 4.7 Atelier 5 - Stratégie de traitement
 
-Tous les risques **critiques et élevés** sont **réduits** par le plan d'action (section 7). Aucun risque n'est transféré à ce stade ; une **cyber-assurance** pourra être étudiée une fois les mesures de base en place (les assureurs exigent généralement MFA et sauvegardes). Le risque résiduel R12 (vol d'un portable) reste « vraisemblable », mais sa gravité devient mineure grâce au chiffrement ; il est **accepté**. Les niveaux résiduels supposent que les actions soient effectivement réalisées et vérifiées.
+Tous les risques **critiques et élevés** sont **réduits** par le plan d'action (section 7). Aucun risque n'est transféré à ce stade ; une **cyber-assurance** pourra être étudiée une fois les mesures de base en place (les assureurs exigent généralement MFA et sauvegardes). Le risque résiduel R12 (vol d'un portable) reste « très vraisemblable » (V3), mais sa gravité devient mineure grâce au chiffrement ; il est **accepté**. Les niveaux résiduels supposent que les actions soient effectivement réalisées et vérifiées.
 
 {{RISK_RESIDUAL_TABLE}}
 
@@ -248,7 +248,7 @@ Le tableau complet des 93 mesures (état actuel, maturité, écart, priorité, r
 
 # 6. Conformité à la loi 09-08 - check-list
 
-Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. Références d'articles indicatives (voir réserve en section 2).
+Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. Références d'articles relues sur le texte consolidé de la loi (voir réserve en section 2).
 
 | # | Exigence | Réf. indicative | Constat | Statut | Action |
 |---|---|---|---|---|---|
@@ -262,9 +262,9 @@ Légende : ✔ conforme · ◐ partiel · ✘ non conforme · ? à vérifier. R�
 | 8 | **Cookies** et traceurs : information et choix de l'utilisateur | Pas de disposition spécifique identifiée dans la loi (principes d'information et de consentement) - position CNDP à vérifier | Outil de mesure d'audience déposé sans bandeau | ✘ | A10 |
 | 9 | **Durées de conservation** définies et appliquées | Art. 3 | Commandes conservées sans limite | ✘ | A15 |
 | 10 | **Sécurité** des traitements (mesures techniques et organisationnelles) | Art. 23 | Voir sections 4 et 5 : MFA, sauvegarde, droits insuffisants | ✘ | A01-A09 |
-| 11 | **Sous-traitants** : garanties de sécurité et contrat écrit (hébergeur, prestataire web, transporteur, cabinet comptable) | Art. 23 (sous-traitance - à vérifier) | Aucun contrat avec clauses de protection des données | ✘ | A14 |
+| 11 | **Sous-traitants** : garanties de sécurité et contrat écrit (hébergeur, prestataire web, transporteur, cabinet comptable) | Art. 23 §2 à 4 (choix du sous-traitant, contrat écrit) | Aucun contrat avec clauses de protection des données | ✘ | A14 |
 | 12 | **Transferts vers l'étranger** (Google, hébergeur) : pays adéquat, ou autorisation/dérogation | Art. 43 et 44 | Localisation des données non connue ; aucune démarche | ? | A13 |
-| 13 | Confidentialité : personnel habilité, engagement de confidentialité | Art. 26 (à vérifier) | Pas de clause de confidentialité dans les contrats | ✘ | A11, A14 |
+| 13 | Confidentialité : personnel habilité, engagement de confidentialité | Art. 25 (instructions) et 26 (secret professionnel) | Pas de clause de confidentialité dans les contrats | ✘ | A11, A14 |
 | 14 | Données des salariés (RH) : information, accès restreint | Art. 3 à 5 | Dossiers RH dans un dossier Drive partagé | ◐ | A11, A13 |
 | 15 | Vidéosurveillance éventuelle : déclaration et affichage | Formalités CNDP | Pas de caméra dans les bureaux à ce jour | ✔ | Si installation : déclarer |
 | 16 | Gestion des violations de données : procédure interne, information de la CNDP si pertinent | Pas d'obligation générale de notification identifiée dans la loi de 2009 (contrairement au RGPD) - bonne pratique | Aucune procédure | ✘ | A16 |
@@ -304,7 +304,7 @@ Le plan proposé ne vise pas la certification ISO/IEC 27001 mais une **maturité
 
 # Annexe A - Projet de Déclaration d'applicabilité (DdA / SoA)
 
-La DdA, exigée par l'ISO/IEC 27001:2022 (clause 6.1.3 d), liste les mesures nécessaires, la justification de leur inclusion ou exclusion et leur état de mise en oeuvre. Ce projet couvre les 93 mesures de l'Annexe A ; **{{NB_APPLICABLE}} sont retenues, {{NB_EXCLUDED}} exclues** avec justification. Intitulés en anglais (texte de la norme) ; libellés français de l'audit = traduction de travail non officielle.
+La DdA, exigée par l'ISO/IEC 27001:2022 (clause 6.1.3 d), liste les mesures nécessaires, la justification de leur inclusion ou exclusion et leur état de mise en oeuvre. Ce projet couvre les 93 mesures de l'Annexe A ; **{{NB_APPLICABLE}} mesures retenues, {{NB_EXCLUDED}} exclusion(s)** avec justification. Intitulés en anglais (texte de la norme) ; libellés français de l'audit = traduction de travail non officielle.
 
 {{SOA}}
 
