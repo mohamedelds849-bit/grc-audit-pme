@@ -1,0 +1,94 @@
+﻿ID;Mesure (EN);Applicable;Justification inclusion / exclusion;État de mise en oeuvre;Action(s) du plan
+5.1;Policies for information security;Oui;Socle de gouvernance - tous risques;Non mis en oeuvre;A11
+5.2;Information security roles and responsibilities;Oui;Socle de gouvernance - tous risques;Partiel;
+5.3;Segregation of duties;Oui;Traitement des risques R07;Partiel;A07
+5.4;Management responsibilities;Oui;Socle de gouvernance - tous risques;Partiel;A22
+5.5;Contact with authorities;Oui;Traitement des risques R03, R09;Non mis en oeuvre;A16
+5.6;Contact with special interest groups;Oui;Bonne pratique de base (socle);Non mis en oeuvre;
+5.7;Threat intelligence;Oui;Traitement des risques R01, R02;Non mis en oeuvre;
+5.8;Information security in project management;Oui;Traitement des risques R03, R08;Non mis en oeuvre;
+5.9;Inventory of information and other associated assets;Oui;Socle de gouvernance - tous risques;Partiel;A15
+5.10;Acceptable use of information and other associated assets;Oui;Traitement des risques R01, R02, R12;Non mis en oeuvre;A11
+5.11;Return of assets;Oui;Traitement des risques R11, R12;Partiel;
+5.12;Classification of information;Oui;Traitement des risques R03;Non mis en oeuvre;A15
+5.13;Labelling of information;Oui;Bonne pratique de base (socle);Non mis en oeuvre;
+5.14;Information transfer;Oui;Traitement des risques R03, R07;Partiel;A07
+5.15;Access control;Oui;Traitement des risques R01, R05, R11;Partiel;
+5.16;Identity management;Oui;Traitement des risques R05, R11;Partiel;A08
+5.17;Authentication information;Oui;Traitement des risques R01, R05;Partiel;A01, A03
+5.18;Access rights;Oui;Traitement des risques R11;Partiel;A08
+5.19;Information security in supplier relationships;Oui;Traitement des risques R05, R06, R11;Non mis en oeuvre;A14
+5.20;Addressing information security within supplier agreements;Oui;Traitement des risques R03, R09;Non mis en oeuvre;A14
+5.21;Managing information security in the ICT supply chain;Oui;Traitement des risques R03, R08;Partiel;
+5.22;Monitoring, review and change management of supplier services;Oui;Traitement des risques R06;Non mis en oeuvre;
+5.23;Information security for use of cloud services;Oui;Traitement des risques R01, R09;Partiel;A19
+5.24;Information security incident management planning and preparation;Oui;Traitement des risques R01, R02, R03;Non mis en oeuvre;A16
+5.25;Assessment and decision on information security events;Oui;Traitement des risques R01, R02;Non mis en oeuvre;
+5.26;Response to information security incidents;Oui;Traitement des risques R02, R03;Non mis en oeuvre;A16
+5.27;Learning from information security incidents;Oui;Bonne pratique de base (socle);Non mis en oeuvre;
+5.28;Collection of evidence;Oui;Traitement des risques R03, R07;Non mis en oeuvre;
+5.29;Information security during disruption;Oui;Traitement des risques R02, R06;Non mis en oeuvre;A20
+5.30;ICT readiness for business continuity;Oui;Traitement des risques R02, R06;Non mis en oeuvre;A04, A20
+5.31;Legal, statutory, regulatory and contractual requirements;Oui;Exigence légale (loi 09-08) et contractuelle;Partiel;A13
+5.32;Intellectual property rights;Oui;Bonne pratique de base (socle);Partiel;
+5.33;Protection of records;Oui;Obligations comptables et fiscales de conservation;Partiel;
+5.34;Privacy and protection of PII;Oui;Exigence légale (loi 09-08, CNDP) - données clients;Non mis en oeuvre;A10, A13
+5.35;Independent review of information security;Oui;Bonne pratique de base (socle);Non mis en oeuvre;A22
+5.36;Compliance with policies, rules and standards for information security;Oui;Bonne pratique de base (socle);Non mis en oeuvre;A22
+5.37;Documented operating procedures;Oui;Traitement des risques R06;Partiel;
+6.1;Screening;Oui;Traitement des risques R11;Partiel;
+6.2;Terms and conditions of employment;Oui;Traitement des risques R11;Partiel;A11
+6.3;Information security awareness, education and training;Oui;Traitement des risques R01, R02, R07;Non mis en oeuvre;A12
+6.4;Disciplinary process;Oui;Bonne pratique de base (socle);Partiel;A11
+6.5;Responsibilities after termination or change of employment;Oui;Traitement des risques R11;Non mis en oeuvre;
+6.6;Confidentiality or non-disclosure agreements;Oui;Traitement des risques R03, R11;Non mis en oeuvre;A14
+6.7;Remote working;Oui;Traitement des risques R12;Partiel;
+6.8;Information security event reporting;Oui;Traitement des risques R01, R02;Non mis en oeuvre;A12
+7.1;Physical security perimeters;Oui;Traitement des risques R12;Partiel;
+7.2;Physical entry;Oui;Traitement des risques R12;Partiel;
+7.3;Securing offices, rooms and facilities;Oui;Traitement des risques R12;Partiel;
+7.4;Physical security monitoring;Oui;Traitement des risques R12;Partiel;
+7.5;Protecting against physical and environmental threats;Oui;Traitement des risques R02, R06;Partiel;
+7.6;Working in secure areas;Non;Exclue : aucune zone sécurisée sur site, l'hébergement du site est externalisé (risque traité via 5.19-5.23). À réévaluer si un serveur local est installé.;Non applicable;
+7.7;Clear desk and clear screen;Oui;Traitement des risques R03, R12;Non mis en oeuvre;
+7.8;Equipment siting and protection;Oui;Traitement des risques R06;Partiel;
+7.9;Security of assets off-premises;Oui;Traitement des risques R12;Partiel;
+7.10;Storage media;Oui;Traitement des risques R02, R12;Non mis en oeuvre;
+7.11;Supporting utilities;Oui;Traitement des risques R06;Partiel;
+7.12;Cabling security;Oui;Bonne pratique de base (socle);Partiel;
+7.13;Equipment maintenance;Oui;Traitement des risques R06;Partiel;
+7.14;Secure disposal or re-use of equipment;Oui;Traitement des risques R03;Non mis en oeuvre;
+8.1;User endpoint devices;Oui;Traitement des risques R02, R12;Partiel;A09
+8.2;Privileged access rights;Oui;Traitement des risques R02, R05;Non mis en oeuvre;A08
+8.3;Information access restriction;Oui;Traitement des risques R03;Partiel;
+8.4;Access to source code;Oui;Traitement des risques R04, R08;Partiel;A02
+8.5;Secure authentication;Oui;Traitement des risques R01, R05;Partiel;A01, A19
+8.6;Capacity management;Oui;Traitement des risques R06;Partiel;
+8.7;Protection against malware;Oui;Traitement des risques R02;Partiel;A09
+8.8;Management of technical vulnerabilities;Oui;Traitement des risques R03, R08;Partiel;A05, A17
+8.9;Configuration management;Oui;Traitement des risques R08, R10;Non mis en oeuvre;A05
+8.10;Information deletion;Oui;Traitement des risques R03, R09;Non mis en oeuvre;A15
+8.11;Data masking;Non;Exclue provisoirement : aucune copie de données de production hors production. À réintégrer si une préproduction est créée (action A21) - lien avec 8.33.;Non applicable;
+8.12;Data leakage prevention;Oui;Traitement des risques R03;Non mis en oeuvre;
+8.13;Information backup;Oui;Traitement des risques R02, R06;Partiel;A04
+8.14;Redundancy of information processing facilities;Oui;Traitement des risques R06;Partiel;
+8.15;Logging;Oui;Traitement des risques R01, R03, R05;Partiel;A18
+8.16;Monitoring activities;Oui;Traitement des risques R01, R08;Non mis en oeuvre;A18
+8.17;Clock synchronization;Oui;Bonne pratique de base (socle);Mis en oeuvre;
+8.18;Use of privileged utility programs;Oui;Traitement des risques R02;Partiel;
+8.19;Installation of software on operational systems;Oui;Traitement des risques R02;Non mis en oeuvre;
+8.20;Networks security;Oui;Traitement des risques R10;Partiel;A06
+8.21;Security of network services;Oui;Traitement des risques R08;Partiel;A23
+8.22;Segregation of networks;Oui;Traitement des risques R10;Non mis en oeuvre;A06
+8.23;Web filtering;Oui;Traitement des risques R02;Non mis en oeuvre;
+8.24;Use of cryptography;Oui;Traitement des risques R03, R12;Partiel;A02, A09
+8.25;Secure development life cycle;Oui;Traitement des risques R03, R08;Non mis en oeuvre;A21
+8.26;Application security requirements;Oui;Traitement des risques R03, R08;Non mis en oeuvre;
+8.27;Secure system architecture and engineering principles;Oui;Traitement des risques R03;Partiel;
+8.28;Secure coding;Oui;Traitement des risques R03, R08;Partiel;A17
+8.29;Security testing in development and acceptance;Oui;Traitement des risques R03, R08;Non mis en oeuvre;A17
+8.30;Outsourced development;Oui;Traitement des risques R03, R04, R11;Non mis en oeuvre;A14
+8.31;Separation of development, test and production environments;Oui;Traitement des risques R08;Non mis en oeuvre;A21
+8.32;Change management;Oui;Traitement des risques R06, R08;Non mis en oeuvre;A21
+8.33;Test information;Oui;Traitement des risques R03;Partiel;
+8.34;Protection of information systems during audit testing;Oui;Bonne pratique de base (socle);Partiel;

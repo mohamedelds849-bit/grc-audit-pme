@@ -1,0 +1,13 @@
+﻿ID;Risque;Source;Cible (VM / bien support);Gravité;Vraisemblance;Score;Niveau;Mesures Annexe A;Actions;G résiduelle;V résiduelle;Score résiduel;Niveau résiduel
+R01;Prise de contrôle du compte Google de la gérance par hameçonnage;SR1 Cybercriminel opportuniste;VM2/VM3 - Comptes Google (Gmail, Drive);4;3;12;Critique;5.17, 5.23, 6.3, 8.5;A01, A03, A12, A19;4;1;4;Modéré
+R02;Rançongiciel sur le poste comptable / partage de fichiers;SR1 Cybercriminel opportuniste;VM3 - PC comptable, logiciel de facturation;4;3;12;Critique;8.1, 8.2, 8.7, 8.8, 8.13;A04, A09, A12, A20;3;1;3;Faible
+R03;Exfiltration de la base clients via une vulnérabilité du site PHP (injection SQL);SR1 Cybercriminel opportuniste / SR5 Concurrent;VM1/VM2 - Site web + base MariaDB;3;3;9;Élevé;8.8, 8.26, 8.28, 8.29;A05, A17, A21;3;1;3;Faible
+R04;Abus d'une clé d'API tierce exposée dans l'historique Git (« denial of wallet »);SR1 Cybercriminel opportuniste;VM1 - Dépôt de code du site;2;4;8;Élevé;8.4, 8.24, 8.30;A02;2;1;2;Faible
+R05;Compromission du compte de l'hébergeur / du domaine (identifiants partagés, sans MFA);SR1 Cybercriminel / SR4 Ancien prestataire;VM1 - Panneau d'hébergement, DNS;4;2;8;Élevé;5.16, 5.17, 8.2, 8.5;A01, A03, A08;4;1;4;Modéré
+R06;Perte durable des données du site faute de sauvegarde exploitable;Accident / erreur (hors sources intentionnelles EBIOS);VM1 - Base MariaDB, fichiers du site;3;2;6;Modéré;5.30, 5.37, 8.13, 8.14;A04, A20;3;1;3;Faible
+R07;Fraude au faux fournisseur / changement de RIB par email usurpé;SR2 Fraudeur;VM3 - Paiements fournisseurs;3;3;9;Élevé;5.3, 5.14, 6.3;A07, A12;3;1;3;Faible
+R08;Défiguration ou injection de contenu malveillant (XSS, SEO spam) sur le site;SR3 Hacktiviste / défaceur;VM4 - Site web, image de marque;2;3;6;Modéré;8.9, 8.25, 8.28, 8.29;A05, A17, A23;2;1;2;Faible
+R09;Non-conformité à la loi 09-08 (absence de déclaration CNDP, transferts hors Maroc non encadrés);Exigence réglementaire (contrôle CNDP, plainte client);VM2 - Traitements de données clients/RH;3;3;9;Élevé;5.31, 5.34, 5.20, 8.10;A10, A13, A14, A15;2;1;2;Faible
+R10;Intrusion sur le réseau local via le Wi-Fi (clé partagée, box non durcie);SR4 Ancien employé / SR1 opportuniste à proximité;Réseau local, PC bureau;2;2;4;Modéré;8.9, 8.20, 8.22;A06;2;1;2;Faible
+R11;Accès persistants d'anciens salariés ou prestataires;SR4 Ancien employé / prestataire mécontent;Comptes Google, back-office, hébergeur;3;3;9;Élevé;5.11, 5.18, 6.5, 8.30;A08, A11, A14;3;1;3;Faible
+R12;Vol ou perte d'un PC portable / smartphone non chiffré contenant des données clients;SR6 Voleur opportuniste;VM2 - Terminaux mobiles;2;3;6;Modéré;7.9, 8.1, 8.24;A09;1;3;3;Faible
